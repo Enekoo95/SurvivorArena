@@ -7,6 +7,6 @@ public class SurvivorArenaConfiguration : ScriptableObject
     public string arenaName = "New Arena";
     public Vector2 size = new Vector2(30f, 30f);
     public GameObject environmentPrefab;
-    public WaveConfiguration waveConfiguration; // de la práctica anterior
+    public WaveConfiguration waveConfiguration; 
     public List<SpawnZoneData> spawnZones = new List<SpawnZoneData>();
 }

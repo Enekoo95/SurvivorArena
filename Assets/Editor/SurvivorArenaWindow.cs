@@ -204,7 +204,7 @@ public class SurvivorArenaWindow : EditorWindow
     {
         serializedConfig.Update();
         SerializedProperty zones = serializedConfig.FindProperty("spawnZones");
-        zones.InsertArrayElementAtIndex(index); // copia el elemento en index + 1
+        zones.InsertArrayElementAtIndex(index); 
         SerializedProperty copy = zones.GetArrayElementAtIndex(index + 1);
         copy.FindPropertyRelative("name").stringValue += " (Copia)";
         copy.FindPropertyRelative("position").vector3Value += new Vector3(1f, 0f, 1f);
